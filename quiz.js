@@ -4,7 +4,7 @@ function checkAnswer() {
     const checkedRadioButton = document.querySelector('input[name="quiz"]:checked');
     let userAnswer = checkedRadioButton.value;
     const feedbackParagraph = document.getElementById('feedback');
-    if(userAnswer == correctAnswer){
+    if (userAnswer === correctAnswer){
         feedbackParagraph.textContent = "Correct! Well done.";
     } else {
         feedbackParagraph.textContent = "That's incorrect. Try again!";
